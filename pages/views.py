@@ -5,7 +5,10 @@ def index(request):
     return render(request, 'pages/index.html')
 
 def about(request):
-    return HttpResponse('about')
+    return render(request, 'pages/about.html')
 
+def contact(request):
+    return render(request, 'pages/about.html')
+    
 
 
