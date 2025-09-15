@@ -23,9 +23,3 @@
     {% include 'parts/footer.html' %}
 </body>
 </html>
-<form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Upload</button>
-</form>
-<img src="{{ profile.photo.url }}" alt="{{ profile.name }}">
