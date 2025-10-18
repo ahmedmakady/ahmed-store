@@ -9,6 +9,9 @@ def about(request):
 
 def contact(request):
     return render(request, 'pages/about.html')
-    
+
+def page1(request):
+    return render(request, 'page1.html')
+
 
 
